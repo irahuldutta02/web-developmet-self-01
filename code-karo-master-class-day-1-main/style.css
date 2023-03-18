@@ -1,0 +1,34 @@
+
+.page-title{
+    text-align: center;
+}
+
+.card{
+    border: 1px solid lightgray;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 16px;
+    font-family: cursive;
+    transition: 0.5s;
+}
+
+.card:hover{
+    /* transform: rotate(180deg); */
+    /* width: 360px; */
+    transform: rotate(5deg);
+    border-radius: 20px;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 16px;
+    height: 160px;
+    object-fit: cover; 
+}
+
+.fex-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
