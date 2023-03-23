@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <main>
+        <form action="">
+            <!-- 1st section  -->
+            <section>
+                <h2>How can we help you?</h2>
+                <ul>
+                    <li>
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" id="name" required>
+                    </li>
+                    <li>
+                        <label for="email">Your E-Mail Address</label>
+                        <input type="email" name="email" id="email" required>
+                    </li>
+                    <li>
+                        <label for="number">Your Phone Number</label>
+                        <input type="number" name="number" id="number" required minlength="10">
+                    </li>
+                    <li>
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required="" minlength="10" maxlength="200" rows="6" autocomplete="off" spellcheck="false"></textarea>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 2nd section  -->
+            <section>
+                <label for="find-us">How did you find us?</label>
+                <select name="find-us" id="find-us">
+                    <option value="web">Web Search</option>
+                    <option value="wom">Word of Mouth</option>
+                    <option value="oth">Others</option>
+                </select>
+            </section>
+
+            <!-- 3rd section  -->
+            <section>
+                <h2>How should we reply?</h2>
+                <ul>
+                    <li class="inline-control">
+                        <input type="radio" name="verify" id="verify-call" value="verify-call" required>
+                        <label for="verify-call">Call me</label>
+                    </li>
+                    <li class="inline-control">
+                        <input type="radio" name="verify" id="verify-email" value="verify-email" required>
+                        <label for="verify-email">Send me an email</label>
+                    </li>
+                    <li class="inline-control">
+                        <input type="radio" name="verify" id="verify-no-reply" value="no-reply" required>
+                        <label for="verify-no-reply">Don't reply</label>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- terms -->
+            <section class="inline-control">
+                <input type="checkbox" name="accept-terms" id="accept-terms" required>
+                <label for="accept-terms">Accept Terms</label>
+            </section>
+
+            <!-- button  -->
+            <section id="button-div">
+                <button id="reset-btn" type="reset">Clear</button>
+                <button id="submit-btn" type="submit">Submit</button>
+            </section>
+        </form>
+    </main>
+
+</body>
+
+</html>
